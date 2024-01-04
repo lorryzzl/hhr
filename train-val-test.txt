@@ -1,0 +1,6 @@
+Since we want to reuse the feature extractor trained before (with Yale videos), we do not reshuffle the train-val-test split. Instead, we simply remove Yale videos when training ViT.
+
+train_vids = ['vid_14', 'vid_21', 'rush_02', 'vid_4', 'vid_18','rush_0', 'vid_24', 'vid_7', 'vid_17', 'vid_12', 
+              'vid_20', 'UNC_29', 'vid_22', 'vid_11', 'rush_01', 'vid_13', 'UNC_27', 'vid_0', 'vid_3']
+val_vids = ['vid_1', 'vid_6', 'vid_15', 'UNC_26', 'UNC_28']
+test_vids = ['vid_19', 'vid_5', 'vid_16', 'vid_23', 'UNC_30']
